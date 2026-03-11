@@ -1,10 +1,8 @@
 # Dependencies
-front/node_modules/
-api/target/
+node_modules/
 
 # Build outputs
-front/dist/
-api/target/*.jar
+dist/
 
 # IDE
 .idea/
@@ -18,10 +16,8 @@ Thumbs.db
 # Environment
 .env
 .env.local
+.env.*
 
 # Logs
 *.log
 npm-debug.log*
-
-# Docker
-.docker/

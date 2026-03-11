@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getMenuItems, getCategories } from '../services/menuService'
+import { getMenuItems, getCategories } from '../data/data'
 
 export const useMenu = () => {
   const [menuItems, setMenuItems] = useState([])

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getRestaurantInfo } from '../services/restaurantService'
+import { getRestaurantInfo } from '../data/data'
 
 export const useRestaurant = () => {
   const [restaurantInfo, setRestaurantInfo] = useState(null)
