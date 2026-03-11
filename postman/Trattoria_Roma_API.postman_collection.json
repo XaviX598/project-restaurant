@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "Trattoria Roma API",
+    "description": "Colección de endpoints API para el restaurante Trattoria Roma",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Menú",
+      "item": [
+        {
+          "name": "Obtener todos los platos",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/menu",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "menu"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener platos disponibles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/menu/disponibles",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "menu", "disponibles"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener plato por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/menu/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "menu", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener platos por categoría",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/menu/categoria/Pastas",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "menu", "categoria", "Pastas"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener todas las categorías",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/menu/categorias",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "menu", "categorias"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Restaurante",
+      "item": [
+        {
+          "name": "Obtener información del restaurante",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/restaurant",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurant"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

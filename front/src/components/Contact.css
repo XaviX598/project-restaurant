@@ -1,0 +1,138 @@
+.contact {
+  background: linear-gradient(180deg, #0d0d0d141414 100 0%, #%);
+  padding: 60px 20px;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.3), transparent);
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a962;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards 0.1s;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards 0.2s;
+}
+
+.contact-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  max-width: 550px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards 0.3s;
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #1a1a1a 0%, #151515 100%);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  animation: scaleIn 0.6s ease forwards 0.4s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.contact-card-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-cta {
+  display: inline-block;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #c9a962 0%, #b8944f 100%);
+  color: #0a0a0a;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 25px rgba(201, 169, 98, 0.35);
+}
+
+.contact-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(201, 169, 98, 0.45);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 70px 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+  
+  .contact-card {
+    padding: 35px 25px;
+  }
+  
+  .contact-card h3 {
+    font-size: 1.3rem;
+  }
+}
